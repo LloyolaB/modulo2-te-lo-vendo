@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"> -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Producto</title>
+</head>
+
+<body>
+    <main class="container-producto">
+        <nav aria-label="breadcrumb">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="identity.html">Quienes somos</a></li>
+                <li><a href="productos.html">Nuestros productos</a></li>
+            </ul>
+            <br>
+        </nav>
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+            <img data-image="black" src="img/black.png" alt="">
+            <img data-image="blue" src="img/blue.png" alt="">
+            <img data-image="red" class="active" src="img/red.png" alt="">
+        </div>
+
+
+        <!-- Right Column -->
+        <div class="right-column">
+
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Audifonos</span>
+                <h1>Beats EP</h1>
+                <p>La elección preferida de una amplia gama de aclamados DJ. Sonido potente, centrado en los graves y
+                    gran aislamiento. Diadema resistente y almohadillas en la oreja adecuadas para actuaciones en
+                    directo.</p>
+            </div>
+
+            <!-- Product Configuration -->
+            <div class="product-configuration">
+
+                <!-- Product Color -->
+                <div class="product-color">
+                    <span>Color</span>
+
+                    <div class="color-choose">
+                        <div>
+                            <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                            <label for="red"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                            <label for="blue"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="black" type="radio" id="black" name="color" value="black">
+                            <label for="black"><span></span></label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Cable Configuration -->
+                <div class="cable-config">
+                    <span>Cable configuración</span>
+
+                    <div class="cable-choose">
+                        <button>Recto</button>
+                        <button>En espiral</button>
+                        <button>Espiral largo</button>
+                    </div>
+
+                    <a href="#">Como configurar</a>
+                </div>
+            </div>
+
+            <!-- Product Pricing -->
+            <div class="product-price">
+                <span>99.990$</span>
+                <a href="#" class="cart-btn">Agregar al carrito</a>
+            </div>
+        </div>
+    </main>
+    <script src="js/scripts.js" defer></script>
+</body>
+
+</html>
