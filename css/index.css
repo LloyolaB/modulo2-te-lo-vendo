@@ -4,13 +4,24 @@
     box-sizing: border-box;
 }
 
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 60px;
 
 }
 
 a {
     text-decoration: none;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
 }
 
 li {
@@ -27,14 +38,26 @@ img.producto {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: teal;
+    justify-content: space-around;
+    background-color: rgb(221, 162, 52);
     color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    margin-bottom: 5rem;
+    opacity: 1;
 }
 
 .nav-links a {
     color: #fff;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-left: 10px;
 }
 
 .menu li:hover {
@@ -70,9 +93,22 @@ img.producto {
 }
 
 .titulo-ofertas {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+
+.quienes-somos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.quienes-somos .card {
+    width: 60%;
 }
 
 .productos {
@@ -141,9 +177,10 @@ footer {
     font-size: 20px;
     font-style: italic;
     font-weight: bold;
-    position: fixed;
+    position: absolute;
     width: 100%;
     bottom: 0;
+    height: 60px;
 
 
 }
@@ -155,4 +192,68 @@ footer {
 
 .identity section p {
     margin: 10px;
+}
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+button.enviar {
+    background-color: #040213;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 auto;
+
+    transition: background-color 0.3s ease;
+    padding: 16px;
+}
+
+button.enviar:hover {
+    background-color: #0080FF;
 }

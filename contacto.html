@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Lo Vendo - Venta productos en linea -</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <!-- estilos en cascada -->
+</head>
+
+<body>
+    <main class="container">
+        <nav aria-label="breadcrumb" class="navbar">
+            <header>
+                <h1><img src="./img/logo.png" alt="Logo" class="logo">TE LO VENDO</h1>
+            </header>
+
+            <ul class="nav-links">
+                <div class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <!-- <li><a href="quienes_somos.html">Quienes somos</a></li> -->
+                    <li><a href="contacto.html">Contacto</a></li>
+                </div>
+            </ul>
+            <br>
+        </nav>
+
+        <h1>Formulario de Contacto</h1>
+        <form action="/enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Ingresa tu email" name="email" required>
+            <label for="email">Asunto</label>
+            <select name="combo" id="combo">
+                <option value="4" disabled selected>Selecciona un tema</option>
+                <option value="1">Compra</option>
+                <option value="2">Venta</option>
+                <option value="3">Otros</option>
+            </select>
+            </br>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" placeholder="Escribe tu mensaje ..." name="mensaje" rows="6" required></textarea>
+            <br>
+            <!-- <input class="enviar" type="submit" value="Enviar"> -->
+            <button class="enviar">Enviar</button>
+        </form>
+        <footer>
+            <div class="container">
+                <p>Powered by TeLo Market Team SPA, 2023</p>
+            </div>
+        </footer>
+</body>
+
+</html>
