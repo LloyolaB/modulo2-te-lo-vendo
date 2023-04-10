@@ -26,7 +26,7 @@ a {
 .logo,
 .logoCel {
   width: 100px;
-  height: 100px;
+  height: auto;
 }
 
 .navbar header h1 {
@@ -36,25 +36,12 @@ a {
 li {
   list-style: none;
 }
-
 img.producto {
   width: 100%;
   height: auto;
 }
-
-.navbar {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: rgb(221, 162, 52);
-  color: #fff;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  height: auto;
-  margin-bottom: 5rem;
-  opacity: 1;
+.mainColor {
+  background-color: #dda23b !important;
 }
 
 .nav-links a {
@@ -94,31 +81,9 @@ h1 {
     display: inline;
 } */
 
-.container-producto {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 15px;
-  display: flex;
-}
-
-.titulo-ofertas {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.quienes-somos {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 12rem;
-}
-
-.quienes-somos .card {
-  /* width: 50%; */
-}
+/* .quienes-somos .card {
+width: 50%; 
+}*/
 
 .productos {
   display: flex;
@@ -128,57 +93,11 @@ h1 {
   margin-bottom: 5rem;
 }
 
-article.card {
-  display: flex;
-  background-color: #fff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.397);
-  padding: 1em;
-  flex-direction: column;
-  /* align-items: stretch; */
-  border-radius: 8px;
-  text-align: center;
-  /* margin: 10px; */
-  /* width: 50%; */
-  justify-content: space-between;
-  align-items: center;
-}
-.body-card {
-  width: 90%;
-}
-
-.producto {
-  width: 90%;
-  /* height: 200px; */
-  object-fit: cover;
-}
-
-.card header {
-  font-size: 24px;
-  margin: 16px;
-}
-
-.card p {
-  font-size: 16px;
-  margin: 16px;
-}
-
-.card button {
-  padding: 1em;
-  background-color: #040213;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 16px;
-  transition: background-color 0.3s ease;
-}
-
 button:hover {
   background-color: #0080ff;
 }
 
-footer {
+/* footer {
   text-align: center;
   padding: 1em;
   background-color: rgb(207, 216, 197);
@@ -189,7 +108,7 @@ footer {
   width: 100%;
   bottom: 0;
   height: 60px;
-}
+} */
 
 .identity h2 {
   text-align: center;
