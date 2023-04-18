@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Te Lo Vendo - Venta productos en linea -</title>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@1.*/css/pico.min.css"> -->
-    <!-- estilos en cascada -->
     <!-- CDN Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
@@ -14,14 +12,12 @@
       integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
       crossorigin="anonymous"
     />
-    <!-- CSS personalizado -->
-    <link rel="stylesheet" href="css/index.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg w-auto mainColor">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <img src="img/logo.png" alt="logo te lo vendo" class="img-fluid logo me-3" />
+        <img src="img/logo.png" width="100px" alt="logo te lo vendo" class="img-fluid logo me-3" />
         <a class="navbar-brand" href="/"> Te lo vendo </a>
         <button
           class="navbar-toggler"
@@ -44,6 +40,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/estadisticas.html">Estadisticas</a>
             </li>
           </ul>
         </div>
@@ -90,94 +89,92 @@
 
       <h1 class="titulo-ofertas d-flex justify-content-center">Ofertas Flash</h1>
       <!-- COMIENZO PRODUCTOS -->
-      <div class="row">
-        <section class="productos">
-          <div class="col-4">
-            <div class="card text-center align-items-center h-100" style="width: auto">
-              <img src="img/palta.png" class="card-img-top" alt="Producto 1" />
-              <div class="card-body">
-                <h5 class="card-title">Peluche de Palta Parlante</h5>
-                <p class="card-text">
-                  Abraza la música con nuestro peluche de palta parlante! Con su altavoz
-                  integrado,batería recargable y controles de reproducción, puedes disfrutar de tus
-                  canciones favoritas en cualquier lugar. Además, las luces LED integradas y su
-                  suave textura lo convierten en el compañero perfecto para relajarte. ¡Obtén el
-                  tuyo hoy mismo y lleva tu música a otro nivel!
-                </p>
-                <a href="#" class="btn mainColor text-light">Comprar</a>
-              </div>
+      <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 p-2">
+        <div class="col">
+          <div class="card text-center align-items-center h-100">
+            <img src="img/palta.png" class="card-img-top" alt="Producto 1" />
+            <div class="card-body">
+              <h5 class="card-title">Peluche de Palta Parlante</h5>
+              <p class="card-text">
+                Abraza la música con nuestro peluche de palta parlante! Con su altavoz
+                integrado,batería recargable y controles de reproducción, puedes disfrutar de tus
+                canciones favoritas en cualquier lugar. Además, las luces LED integradas y su suave
+                textura lo convierten en el compañero perfecto para relajarte. ¡Obtén el tuyo hoy
+                mismo y lleva tu música a otro nivel!
+              </p>
+              <a href="#" class="btn mainColor text-light">Comprar</a>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card h-100 text-center align-items-center" style="width: auto">
-              <img src="img/black.png" class="card-img-top" alt="Producto 2" />
-              <div class="card-body">
-                <h5 class="card-title">Audífono Negro Loyola4000X</h5>
-                <p class="card-text">
-                  ¡Sumérgete en la experiencia de audio definitiva con nuestros audífonos de máximo
-                  nivel! Ofrecen una calidad de sonido excepcional, cancelación de ruido
-                  activa,conectividad inalámbrica, comodidad y controles intuitivos, todo en un
-                  diseño elegante y moderno. Con una batería de larga duración, podrás disfrutar de
-                  tus canciones favoritas durante horas. ¡Obtén los tuyos y escucha tu música como
-                  nunca antes!
-                </p>
-                <a href="#" class="btn mainColor text-light">Comprar</a>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card text-center align-items-center h-100">
+            <img src="img/black.png" class="card-img-top" alt="Producto 2" />
+            <div class="card-body">
+              <h5 class="card-title">Audífono Negro Loyola4000X</h5>
+              <p class="card-text">
+                ¡Sumérgete en la experiencia de audio definitiva con nuestros audífonos de máximo
+                nivel! Ofrecen una calidad de sonido excepcional, cancelación de ruido
+                activa,conectividad inalámbrica, comodidad y controles intuitivos, todo en un diseño
+                elegante y moderno. Con una batería de larga duración, podrás disfrutar de tus
+                canciones favoritas durante horas. ¡Obtén los tuyos y escucha tu música como nunca
+                antes!
+              </p>
+              <a href="#" class="btn mainColor text-light">Comprar</a>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card h-100 text-center" style="width: auto">
-              <img src="img/blue.png" class="card-img-top" alt="Producto 3" />
-              <div class="card-body">
-                <h5 class="card-title">Audífono Azul Loyola4000X</h5>
-                <p class="card-text">
-                  ¡Sumérgete en la experiencia de audio definitiva con nuestros audífonos de máximo
-                  nivel! Ofrecen una calidad de sonido excepcional, cancelación de ruido
-                  activa,conectividad inalámbrica, comodidad y controles intuitivos, todo en un
-                  diseño elegante y moderno. Con una batería de larga duración, podrás disfrutar de
-                  tus canciones favoritas durante horas. ¡Obtén los tuyos y escucha tu música como
-                  nunca antes!
-                </p>
-                <a href="#" class="btn mainColor text-light">Comprar</a>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 text-center">
+            <img src="img/blue.png" class="card-img-top" alt="Producto 3" />
+            <div class="card-body">
+              <h5 class="card-title">Audífono Azul Loyola4000X</h5>
+              <p class="card-text">
+                ¡Sumérgete en la experiencia de audio definitiva con nuestros audífonos de máximo
+                nivel! Ofrecen una calidad de sonido excepcional, cancelación de ruido
+                activa,conectividad inalámbrica, comodidad y controles intuitivos, todo en un diseño
+                elegante y moderno. Con una batería de larga duración, podrás disfrutar de tus
+                canciones favoritas durante horas. ¡Obtén los tuyos y escucha tu música como nunca
+                antes!
+              </p>
+              <a href="#" class="btn mainColor text-light">Comprar</a>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card h-100 text-center" style="width: auto">
-              <img src="img/lamparas.jpg" class="card-img-top" alt="Producto 4" />
-              <div class="card-body">
-                <h5 class="card-title">Parlantes Kawaii</h5>
-                <p class="card-text">
-                  ¡Descubre el mejor compañero para tus actividades diarias con nuestros parlantes
-                  de escritorio! Con una potencia de sonido clara y nítida, podrás disfrutar de tus
-                  canciones y podcasts favoritos. Además, cuenta con conectividad Bluetooth y una
-                  práctica entrada auxiliar. ¡No te pierdas la oportunidad de tener un parlante de
-                  escritorio de alta calidad en tu hogar u oficina con tu neko-chan y color
-                  favoritos! Características: Potencia de sonido clara y nítida, conectividad
-                  Bluetooth, entrada auxiliar.
-                </p>
-                <a href="#" class="btn mainColor text-light">Comprar</a>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card text-center h-100">
+            <img src="img/lamparas.jpg" class="card-img-top" alt="Producto 4" />
+            <div class="card-body">
+              <h5 class="card-title">Parlantes Kawaii</h5>
+              <p class="card-text">
+                ¡Descubre el mejor compañero para tus actividades diarias con nuestros parlantes de
+                escritorio! Con una potencia de sonido clara y nítida, podrás disfrutar de tus
+                canciones y podcasts favoritos. Además, cuenta con conectividad Bluetooth y una
+                práctica entrada auxiliar. ¡No te pierdas la oportunidad de tener un parlante de
+                escritorio de alta calidad en tu hogar u oficina con tu neko-chan y color favoritos!
+                Características: Potencia de sonido clara y nítida, conectividad Bluetooth, entrada
+                auxiliar.
+              </p>
+              <a href="#" class="btn mainColor text-light">Comprar</a>
             </div>
           </div>
-          <div class="col-4">
-            <div class="card h-100 ms-3 text-center" style="width: auto">
-              <img src="img/mochila_kawaii.webp" class="card-img-top" alt="Producto 5" />
-              <div class="card-body">
-                <h5 class="card-title">Parlantes Kawaii</h5>
-                <p class="card-text">
-                  ¡Llegó la hora de volver al colegio con estilo! Nuestras mochilas kawaii en color
-                  rosa, blanco y celeste no solo son lindas sino también muy prácticas. Con la mejor
-                  calidad de audio en audífonos y conectividad Bluetooth, tu princesa podrá llevar
-                  sus canciones favoritas a todas partes. Además, con su diseño resistente y
-                  duradero, ¡estará lista para cualquier aventura que le depare el día escolar!
-                  ¡Aprovecha nuestra promoción y consigue la tuya hoy mismo!
-                </p>
-                <a href="#" class="btn mainColor text-light">Comprar</a>
-              </div>
+        </div>
+        <div class="col">
+          <div class="card ms-3 text-center h-100">
+            <img src="img/mochila_kawaii.webp" class="card-img-top" alt="Producto 5" />
+            <div class="card-body">
+              <h5 class="card-title">Parlantes Kawaii</h5>
+              <p class="card-text">
+                ¡Llegó la hora de volver al colegio con estilo! Nuestras mochilas kawaii en color
+                rosa, blanco y celeste no solo son lindas sino también muy prácticas. Con la mejor
+                calidad de audio en audífonos y conectividad Bluetooth, podrán llevar sus canciones
+                favoritas a todas partes. Además, con su diseño resistente y duradero, ¡estará lista
+                para cualquier aventura que le depare el día escolar! ¡Aprovecha nuestra promoción y
+                consigue la tuya hoy mismo!
+              </p>
+              <a href="#" class="btn mainColor text-light">Comprar</a>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </main>
     <!-- -FOOOTER - -->
